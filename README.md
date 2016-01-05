@@ -15,7 +15,7 @@ Installation
 
 Everything else is automatic!
 
-I recommend putting precommit-hook in your project's devDependencies to make sure that anyone who may be contributing to your project will have the hook installed.
+I recommend putting prepush-hook in your project's devDependencies to make sure that anyone who may be contributing to your project will have the hook installed.
 
 ```
 {
@@ -56,7 +56,7 @@ OR
 {
   "name": "your_project",
   "description": "just an example",
-  "precommit": ["test"]
+  "prepush": ["test"]
 }
 ```
 
@@ -97,7 +97,7 @@ You may configure what scripts will be run by the hook, by passing an array of s
     "validate": "./command/to/run",
     "test": "./other/command"
   },
-  "precommit": ["lint", "test"]
+  "prepush": ["lint", "test"]
 }
 ```
 
